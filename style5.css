@@ -74,8 +74,8 @@ button{
     background-color: #364364;
     transition: 0.1s;
     cursor: pointer;
-    position: fixed; /* Фиксированное расположение */
-    top: 50px; /* в правом верхнем углу */
+    position: fixed;
+    top: 50px;
     right: 50px;
     display: flex;
     justify-content: center;
@@ -85,12 +85,10 @@ button{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  /* Увеличиваем кнопку при наведении на нее */
   .cart:hover {
     transform: scale(1.1);
   }
   
-  /* Стилизуем счетчик товаров */
   .cart__num {
     position: absolute;
     background-color: #d62240;
@@ -115,9 +113,9 @@ button{
   }
 
   .modal {
-    display: none; /* По умолчанию окно закрыто */
-    z-index: 10; /* Чтобы сделать окно поверх всех элементов */
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон */
+    display: none;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -125,12 +123,12 @@ button{
     height: 100%;
     align-items: flex-start;
     justify-content: center;
-    overflow-y: scroll; /* При переполнении окна делаем скролл */
+    overflow-y: scroll;
     padding: 20px;
   }
   
   .modal--open {
-    display: flex; /* Модификатор для открытого окна */
+    display: flex;
   }
   
   .modal__box {
@@ -174,6 +172,5 @@ button{
   
   .modal__bottom > .btn--close {
     background-color: #dedede;
-    color: #0066cc;
+    color: #000000;
   }
-
