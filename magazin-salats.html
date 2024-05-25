@@ -7,58 +7,82 @@
     <link rel="stylesheet" href="style5.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/7ce3ef6933.js" crossorigin="anonymous"></script>
+    <script src="magazin-1.js"></script>
 </head>
 <body>
-    <div class="menu">
-        <div class="about-us">
-            <a href="">О нас</a>
-            <div class="name"><p>Салаты у Никиты</p></div>
-            <div class="number">+7 (918)-740-0517</div>
+    
+        <div class="menu">
+            <div class="about-us">
+                <a href="">О нас</a>
+                <div class="name"><p>Салаты у Никиты</p></div>
+                <div class="number">+7 (918)-740-0517</div>
+            </div>
+            <div class="glavnoe">
+                <div><a href="https://qweq2.github.io/glav-menu-salats/">Главная</a></div>
+            </div>
+            <div class="glavnoe">
+                <div><a href="">Магазин</a></div>
+            </div>
+            <div class="glavnoe">
+                <div><a href="https://qweq2.github.io/blogs-salats/">Блоги</a></div>
+            </div>
+            <div class="ssilky">
+                <div><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                <div><a href="https://vk.com/zzzzzzzzzzzzzzzzzzaz"><i class="fa-brands fa-vk"></i></a></div>
+                <div><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
+            </div>
         </div>
-        <div class="glavnoe">
-            <div><a href="https://qweq2.github.io/glav-menu-salats/">Главная</a></div>
+    
+        <div class="perehody"><p><a href="https://qweq2.github.io/glav-menu-salats/">Главная</a>-<a href="">Магазин</a></p></div>
+        <div class="salats">
+            <div class="salat">
+                <p class=".card__title">Салат Цезарь</p>
+                <img class="card__image" src="https://cake-dance.ru/wp-content/uploads/a/7/9/a7996179f30a61b2c06b79e99c019276.jpeg">
+                <div class="price"><p class="card__price--common">250p.</p>-100гр</div>
+                <button class="add-card">В корзину</button>
+            </div>
+            <div class="salat">
+                <p class=".card__title">Салат Оливье</p>
+                <img class="card__image" src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65731474cdd4553c12e4f520_6573172f2f3b6416518608c4/scale_1200">
+                <div class="price"><p class="card__price--common">170p.</p>-100гр</div>
+                <button class="add-card">В корзину</button>
+            </div>
+            <div class="salat">
+                <p class=".card__title">Салат Винегрет</p>
+                <img class="card__image" src="https://mykaleidoscope.ru/uploads/posts/2022-07/1656627626_39-mykaleidoscope-ru-p-salat-vinegret-yeda-krasivo-foto-42.jpg">
+                <div class="price"><p class="card__price--common">150p.</p>-100гр</div>
+                <button class="add-card">В корзину</button>
+            </div>
+            <div class="salat">
+                <p class="card__title">Салат Греческий</p>
+                <img class="card__image" src="https://eda.ru/images/RecipePhoto/390x390/grecheskiy-salat_175404_photo_183111.jpg">
+                <div class="price"><p class="card__price--common">150p.</p>-100гр</div>
+                <button class="add-card">В корзину</button>
+            </div>
+            <div class="salat">
+                <p class="card__title">Салат Селедка под шубой</p>
+                
+                <img class="card__image" src="https://media.ovkuse.ru/images/recipes/486d4829-6de1-43a5-acd3-e900b6a6b759/486d4829-6de1-43a5-acd3-e900b6a6b759.jpg">
+                <div class="price"><p class="card__price--common">120p.</p>-100гр</div>
+                <button class="add-card">В корзину</button>
+            </div>
         </div>
-        <div class="glavnoe">
-            <div><a href="">Магазин</a></div>
+        <div class="karzina">
+            <button class="cart" id="cart">
+                <img class="cart__image" src="https://github.com/toni-wheel/demo-shopping-cart/blob/dev/images/cart.png?raw=true" alt="Cart" />
+            </button>
         </div>
-        <div class="glavnoe">
-            <div><a href="https://qweq2.github.io/blogs-salats/">Блоги</a></div>
+        <div class="modal" id="modal">
+            <div class="modal__box">
+              <div class="modal__title">Корзина</div>
+              <div class="modal__info">
+                
+              </div>
+              <div class="modal__bottom">
+                <a href="#" class="btn">Go to</a>
+                <a href="#" class="btn btn--close" id="btn_close">Close</a>
+              </div>
+            </div>
         </div>
-        <div class="ssilky">
-            <div><a href=""><i class="fa-brands fa-instagram"></i></a></div>
-            <div><a href="https://vk.com/zzzzzzzzzzzzzzzzzzaz"><i class="fa-brands fa-vk"></i></a></div>
-            <div><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
-        </div>
-    </div>
-    <div class="perehody"><p><a href="https://qweq2.github.io/glav-menu-salats/">Главная</a>-<a href="">Магазин</a></p></div>
-    <div class="salats">
-        <div class="salat">
-            <p>Салат Цезарь</p>
-            <p>250р.-<h3>+</h3></p>
-            <img src="https://cake-dance.ru/wp-content/uploads/a/7/9/a7996179f30a61b2c06b79e99c019276.jpeg">
-        </div>
-        <div class="salat">
-            <p>Салат Оливье</p>
-            <p>80р.-<h3>+</h3></p>
-            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65731474cdd4553c12e4f520_6573172f2f3b6416518608c4/scale_1200">
-        </div>
-        <div class="salat">
-            <p>Салат Винегрет</p>
-            <p>100р.-<h3>+</h3></p>
-            <img src="https://mykaleidoscope.ru/uploads/posts/2022-07/1656627626_39-mykaleidoscope-ru-p-salat-vinegret-yeda-krasivo-foto-42.jpg">
-        </div>
-        <div class="salat">
-            <p>Салат Греческий</p>
-            <p>110р.-<h3>+</h3></p>
-            <img src="https://eda.ru/images/RecipePhoto/390x390/grecheskiy-salat_175404_photo_183111.jpg">
-        </div>
-        <div class="salat">
-            <p>Салат Селедка под шубой</p>
-            <p>180р.-<h3>+</h3></p>
-            <img src="https://media.ovkuse.ru/images/recipes/486d4829-6de1-43a5-acd3-e900b6a6b759/486d4829-6de1-43a5-acd3-e900b6a6b759.jpg">
-        </div>
-    </div>
-
-
 </body>
 </html>
