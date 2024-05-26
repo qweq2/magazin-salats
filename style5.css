@@ -174,3 +174,10 @@ button{
     background-color: #dedede;
     color: #000000;
   }
+  .modal__bottom > .oplata{
+    margin-right: 20px;
+    color: green;
+  }
+  .total{
+    
+  }
